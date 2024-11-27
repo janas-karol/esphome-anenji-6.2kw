@@ -8,6 +8,8 @@
 
 ESPHome configuration to monitor and control a ISolar/EASUN SMG II inverter via RS232
 
+[Original project](https://github.com/syssi/esphome-smg-ii)
+
 ## Supported devices
 
 * ISolar SMG II
