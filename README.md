@@ -6,7 +6,7 @@
 ![GitHub watchers](https://img.shields.io/github/watchers/syssi/esphome-smg-ii)
 [!["Buy Me A Coffee"](https://img.shields.io/badge/buy%20me%20a%20coffee-donate-yellow.svg)](https://www.buymeacoffee.com/syssi)
 
-ESPHome configuration to monitor and control a ISolar/EASUN SMG II inverter via RS232
+ESPHome configuration to monitor and control a Anenji 6.2kW inverter via RS232
 
 [Original project](https://github.com/syssi/esphome-smg-ii)
 
