@@ -59,12 +59,12 @@ ESPHome configuration to monitor and control a Anenji 6.2kW inverter via RS232
 
 ### MAX3232
 
-| Pin          | Label        | ESPHome     | ESP8266 example  | ESP32 example |
-| :----------- | :----------- | :---------- | :--------------- | :------------ |
-| P11 (DIN1)   | TXD          | `tx_pin`    | `GPIO4`          | `GPIO16`      |
-| P12 (ROUT1)  | RXD          | `rx_pin`    | `GPIO5`          | `GPIO17`      |
-| P16 (VCC)    | VCC          |             |                  |               |
-| P15 (GND)    | GND          |             |                  |               |
+| Pin          | Label        | ESPHome     | ESP32 example |
+| :----------- | :----------- | :---------- | :------------ |
+| P11 (DIN1)   | TXD          | `tx_pin`    | `GPIO16`      |
+| P12 (ROUT1)  | RXD          | `rx_pin`    | `GPIO17`      |
+| P16 (VCC)    | VCC          |             |               |
+| P15 (GND)    | GND          |             |               |
 
 ## Installation
 
