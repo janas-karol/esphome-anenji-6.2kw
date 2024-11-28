@@ -7,9 +7,6 @@ ESPHome configuration to monitor and control a Anenji 6.2kW inverter via RS232
 ## Supported devices
 
 * Anenji 6.2kW
-* ISolar SMG II
-* EASUN SMG II
-* PowMr POW-HVM5.5K-48V / POW-HVM5.5K-48V-P
 
 ## Requirements
 
@@ -40,27 +37,25 @@ ESPHome configuration to monitor and control a Anenji 6.2kW inverter via RS232
                RS232                     UART-TTL
 ┌──────────┐              ┌──────────┐                ┌─────────┐
 │          │              │          │<----- RX ----->│         │
-│          │<---- TX ---->│  RS232   │<----- TX ----->│ ESP32/  │
-│  SMG-II  │<---- RX ---->│  to TTL  │<----- GND ---->│ ESP8266 │
+│          │<---- TX ---->│  RS232   │<----- TX ----->│         │
+│  Anenji  │<---- RX ---->│  to TTL  │<----- GND ---->│  ESP32  │
 │          │<---- GND --->│  module  │<-- 3.3V VCC -->│         │<--- VCC
 │          │              │          │                │         │<--- GND
 └──────────┘              └──────────┘                └─────────┘
-```
 
-### RJ45 jack
+### DB9 plug
 
-| Pin     | Purpose      | MAX3232 pin       | Color T-568B |
-| :-----: | :----------- | :---------------- | :------------|
-|    1    | TX           | P13 (RIN1)        | White-Orange |
-|    2    | RX           | P14 (DOUT1)       | Orange       |
-|    3    |              |                   |              |
-|    4    | VCC 12V      | -                 | Blue         |
-|    5    |              |                   |              |
-|    6    |              |                   |              |
-|    7    |              |                   |              |
-|    8    | GND          | P15 (GND)         | Brown        |
-
-Please be aware of the different RJ45 pinout colors ([T-568A vs. T-568B](images/rj45-colors-t568a-vs-t568.png)).
+| Pin     | Purpose      | MAX3232 pin       | 
+| :-----: | :----------- | :---------------- | 
+|    1    |              |                   | 
+|    2    | RX           | -->               | 
+|    3    | TX           | <--               |
+|    4    |              |                   |
+|    5    | GND          | --                |
+|    6    |              |                   |
+|    7    |              |                   |
+|    8    |              |                   |
+|    9    |              |                   | 
 
 ### MAX3232
 
@@ -73,7 +68,7 @@ Please be aware of the different RJ45 pinout colors ([T-568A vs. T-568B](images/
 
 ## Installation
 
-Use the `esp32-example.yaml` / `esp8266-example.yaml` as proof of concept:
+Use the `esp32-example.yaml` as proof of concept:
 
 ```bash
 # Install esphome
