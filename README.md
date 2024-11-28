@@ -1,10 +1,4 @@
-# esphome-smg-ii
-
-![GitHub actions](https://github.com/syssi/esphome-smg-ii/actions/workflows/ci.yaml/badge.svg)
-![GitHub stars](https://img.shields.io/github/stars/syssi/esphome-smg-ii)
-![GitHub forks](https://img.shields.io/github/forks/syssi/esphome-smg-ii)
-![GitHub watchers](https://img.shields.io/github/watchers/syssi/esphome-smg-ii)
-[!["Buy Me A Coffee"](https://img.shields.io/badge/buy%20me%20a%20coffee-donate-yellow.svg)](https://www.buymeacoffee.com/syssi)
+# esphome-anenji-6.2
 
 ESPHome configuration to monitor and control a Anenji 6.2kW inverter via RS232
 
@@ -12,6 +6,7 @@ ESPHome configuration to monitor and control a Anenji 6.2kW inverter via RS232
 
 ## Supported devices
 
+* Anenji 6.2kW
 * ISolar SMG II
 * EASUN SMG II
 * PowMr POW-HVM5.5K-48V / POW-HVM5.5K-48V-P
@@ -19,9 +14,9 @@ ESPHome configuration to monitor and control a Anenji 6.2kW inverter via RS232
 ## Requirements
 
 * [ESPHome 2024.6.0 or higher](https://github.com/esphome/esphome/releases).
-* One half of an ethernet cable with RJ45 connector
-* RS232-to-TTL module (`MAX3232CSE` f.e.)
-* Generic ESP32 or ESP8266 board
+* DB9 male plug
+* RS232-to-TTL module (`MAX3232` f.e.)
+* Generic ESP32 board
 
 ## Schematics
 
